@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Транспортная задача</title>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="title">
+            <table class="outer-table" id="initTable">
+                <tr id="row0">
+                    <td>
+                        <table class="inner-table">
+                            <tr><td></td><td>T<sub>j</sub></td></tr>
+                            <tr><td>A<sub>i</sub></td><td></td></tr>
+                        </table>
+                    </td>
+                    <td><input type="text" size="2" id="T1"/></td>
+                </tr>
+                <tr id="row1">
+                    <td><input type="text" size="2" id="A1"/></td>
+                    <td>
+                        <table class="inner-table">
+                            <tr>
+                                <td><input type="text" size="2" id="C1_1"/></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="CK1_1"></td>
+                                <td id="X1_1"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table><br/>
+                <div class="buttons">
+                    <button class="addRow" onclick="addRow();">Добавить строку</button>
+                    <button class="deleteRow" onclick="deleteRow();" id="delrow" hidden>Удалить строку</button>
+                    </br>
+                </br>
+                    <button class="addColumn" onclick="addColumn();">Добавить столбец</button>
+                    <button class="deleteColumn" onclick="deleteColumn();" id="delcol" hidden>Удалить столбец</button>
+                    <input type="hidden" id="rownum" value="1"/>
+                    <input type="hidden" id="colnum" value="1"/>
+                    </br>
+                </br>
+                    <button class="button" onclick="solve();">Решить</button>
+                </div>
+            </br>
+            <div id="solution">
+            </div>
+
+        </div>           
+    </body>
+</html>

@@ -1,0 +1,71 @@
+
+root { 
+    display: block;
+}
+
+.outer-table {
+    border-collapse: collapse;
+}
+
+.addRow {
+    width: 10em;
+    height: 2em;
+    background-color: rgb(149, 228, 149);
+    border: 3px solid green;
+}
+
+.deleteRow {
+    width: 10em;
+    height: 2em;
+    background-color: rgb(250, 151, 151);
+    border: 3px solid red;
+}
+
+.addColumn {
+    width: 10em;
+    height: 2em;
+    background-color: rgb(149, 228, 149);
+    border: 3px solid green;
+}
+
+.deleteColumn {
+    width: 10em;
+    height: 2em;
+    background-color: rgb(250, 151, 151);
+    border: 3px solid red;
+}
+
+.button {
+    width: 10em;
+    height: 3em;
+    background-color: grey;
+    border: 3px solid grey;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.passby {
+    background-color: yellow;
+}
+
+.turnpoint {
+    background-color: red;
+}
+
+.inner-table td {
+    border: none;
+}
+
+.u {
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
+.v td {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
