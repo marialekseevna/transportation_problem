@@ -251,10 +251,10 @@ function solve() {
         while (!isOptimal) {
             resultSrc = document.getElementById("solution").innerHTML;
             isOptimal = true;
-            resultSrc = resultSrc + "Solution is not optimal</br>New base ";
-            resultSrc = resultSrc + "square: [" + (turningPoints[0][0] + 1) + ", ";
-            resultSrc = resultSrc + (turningPoints[0][1] + 1) + "]<br/>Minimum ";
-            resultSrc = resultSrc + "X in minus-squares: " + displace + "<br/>";
+            resultSrc = resultSrc + "Решение не оптимальное</br>Новая базовая ";
+            resultSrc = resultSrc + "площадь: [" + (turningPoints[0][0] + 1) + ", ";
+            resultSrc = resultSrc + (turningPoints[0][1] + 1) + "]<br/>Минимальный ";
+            resultSrc = resultSrc + "X в минус квадрате: " + displace + "<br/>";
             makeUV();
             for (var i = 0; i < rownum; i++) {
                 for (var j = 0; j < colnum; j++) {
@@ -342,7 +342,7 @@ function solve() {
                 }
                 delete X[remove];
             } else {
-                resultSrc = resultSrc + "Found solution is optimal";
+                resultSrc = resultSrc + "Найденное решение оптимально";
                 document.getElementById("solution").innerHTML = resultSrc;
             }
             count++;
